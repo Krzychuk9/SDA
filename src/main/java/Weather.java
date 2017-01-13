@@ -14,7 +14,7 @@ public class Weather {
     private OpenWeatherMap openWeatherMap = new OpenWeatherMap(OpenWeatherMap.Units.METRIC, "6a266eb610b14027977a995a15e7a205");
 
     /**
-     * Download data from openweathermap.org and display in console
+     * Download data from openweathermap.org and display it in console
      * @param citiesNames list of string
      */
     public void checkWeather(List<String> citiesNames) {
@@ -47,6 +47,7 @@ public class Weather {
             }
         }
         showWeather();
+        cityWeathers.clear();
     }
 
     /**
