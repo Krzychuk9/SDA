@@ -36,6 +36,9 @@ public class Cities {
         return citiesNames;
     }
 
+    /**
+     * Wydziel tę klasę do osobnego pliku, będziesz mógł jej użyć jako parametru
+     */
     private class City {
 
         private String name;
