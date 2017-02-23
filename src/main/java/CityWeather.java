@@ -1,8 +1,8 @@
 
 public class CityWeather {
     private String name;
-    private float temperature;
-    private float humadity;
+    private float temp;
+    private float humidity;
     private float windSpeed;
     private float gradLevel;
 
@@ -19,12 +19,12 @@ public class CityWeather {
         this.name = name;
     }
 
-    public void setTemperature(float temperature) {
-        this.temperature = temperature;
+    public void setTemp(float temp) {
+        this.temp = temp;
     }
 
-    public void setHumadity(float humadity) {
-        this.humadity = humadity;
+    public void setHumidity(float humidity) {
+        this.humidity = humidity;
     }
 
     public void setWindSpeed(float windSpeed) {
@@ -42,12 +42,12 @@ public class CityWeather {
         return name;
     }
 
-    public float getTemperature() {
-        return temperature;
+    public float getTemp() {
+        return temp;
     }
 
-    public float getHumadity() {
-        return humadity;
+    public float getHumidity() {
+        return humidity;
     }
 
     public float getWindSpeed() {
