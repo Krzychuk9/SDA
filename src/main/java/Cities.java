@@ -16,6 +16,7 @@ public class Cities {
 
     /**
      * Take input from console
+     *
      * @return string inputed by user
      */
     private String getData() {
@@ -25,7 +26,8 @@ public class Cities {
     }
 
     /**
-     *Creat names of cities list
+     * Creat names of cities list
+     *
      * @return list of strings
      */
     public List<String> getCitiesNames() {
@@ -34,41 +36,5 @@ public class Cities {
             citiesNames.add(city.getName());
         }
         return citiesNames;
-    }
-
-    private class City {
-
-        private String name;
-
-        /**
-         * Constructor
-         *
-         * @param name city's name
-         */
-        public City(String name) {
-            this.name = name;
-        }
-
-        /*
-        Getter
-         */
-        public String getName() {
-            return name;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            City city = (City) o;
-
-            return name != null ? name.equals(city.name) : city.name == null;
-        }
-
-        @Override
-        public int hashCode() {
-            return name != null ? name.hashCode() : 0;
-        }
     }
 }
